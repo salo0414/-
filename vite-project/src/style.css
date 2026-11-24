@@ -1,0 +1,61 @@
+/* ===== 全局样式 ===== */
+
+/* 1. 基础重置：清除浏览器默认的 margin / padding / 边框，统一下基线对齐 */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* font-size:100%; */
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* 2. 去掉链接下划线与列表默认圆点 */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* 3. 页面基础：撑满视口并设置整体灰底，作为内容卡片的外层背景 */
+body {
+  height: 100vh;
+  background-color: #f1f4f6;
+}
+
+/* 4. 挂载节点撑满宽度，保证内部布局的百分比高度生效 */
+#app {
+  height: 100%;
+}
+
+/* 5. Element Plus 顶栏统一风格：去掉内边距、加底部阴影分隔 */
+.el-header {
+  height: 50px !important;   /* 具体页面可在组件内覆盖（如 BackendLayout 的 74px） */
+  padding: 0 !important;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.05);
+  border-bottom: 1px solid transparent;
+}
+
+/* 6. 分页区域：白底容器 + 分页器右对齐 */
+.pagination-info {
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.pagination-info .el-pagination {
+  justify-content: end;
+}

@@ -1,0 +1,14 @@
+# ============================================
+# 这是示例配置，仓库中不包含真实的账号和密码
+# 本地使用时请把 username / password 改成你自己的数据库账号
+# （本地修改不会被提交，详见 README「配置说明」）
+# ============================================
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mental_health_assistant02?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: 你的数据库用户名
+    password: 你的数据库密码
+
+#服务器配置
+server:
+  port: 1236

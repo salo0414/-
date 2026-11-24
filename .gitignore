@@ -1,0 +1,45 @@
+# ===== 根级忽略规则（前后端共用）=====
+
+# 依赖与构建产物（体积大，绝不能传）
+node_modules/
+dist/
+dist-ssr/
+target/
+build/
+*.jar
+*.war
+
+# 日志
+*.log
+logs/
+
+# 敏感配置
+.env
+.env.local
+*.local
+*.pem
+*.key
+
+# IDE / 编辑器
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.settings/
+.project
+.classpath
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*.tmp
+*.swp
+*~
+
+# 编辑器生成产物
+**/.trae-html-share-packages/
+*.zip
