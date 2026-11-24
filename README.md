@@ -116,6 +116,7 @@ java -jar target/springboot-0.0.1-SNAPSHOT.jar
 
 - `springboot/src/main/resources/application.yml` 中只保留**示例配置**，数据库账号密码是占位符，真实的账号密码不会提交到仓库
 - 本地首次运行：把该文件里的 `username` / `password` 改成自己的 MySQL 账号即可，代码无需其他改动
+- 同一文件中的 `jwt.secret` 也要换成自己的签名密钥（示例里是占位符），否则签发 token 的行为不可控
 - 该文件对 Git 设置了「忽略本地修改」（`git update-index --skip-worktree`），所以本地填了真实密码后 `git status` 依旧干净，`git add .` 也不会把密码提交上去
 - 如果要修改仓库里的示例内容（例如换端口），先临时解除忽略，改完提交后再恢复：
 
